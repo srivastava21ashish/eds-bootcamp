@@ -1,0 +1,15 @@
+footer {
+  border-top: 1px solid #e5e5e7;
+  border-bottom: 1px solid #e5e5e7;
+  padding-top: 20px;
+}
+footer div {
+  padding-bottom: 10px;
+}
+footer .flex.sm-icon {
+  gap: 20px;
+}
+footer .flex.sm-icon img {
+  max-width: 20px;
+  max-height: 20px;
+}

@@ -1,0 +1,99 @@
+.shopping-bag {
+    width: 70%;
+}
+.shopping-bag h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.shopping-bag hr {
+    border-bottom: 8px solid #1f39ff;
+    width: 100px;
+    margin: auto;
+}
+.cart {
+    gap: 24px;
+}
+.cart .cart-list {
+    width: 70%;
+}
+.cart .cart-list img {
+    width: 100%;
+}
+.cart .cart-list .grid {
+    padding: 30px 0px;
+}
+.cart .cart-list button {
+    width: 100%;
+    height: initial;
+    min-width: initial;
+    padding: initial;
+    background: initial;
+    cursor: pointer;
+    box-shadow: initial;
+    color: #000000;
+    font-size: 0.75rem;
+    text-transform: initial;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0px;
+}
+.cart .cart-list button i {
+    display: block;
+    width: 14px;
+    height: 14px;
+}
+.cart .cart-list button .bin-icon {
+    background: url(../../assets/trash.svg) no-repeat;
+    background-size: contain;
+}
+.cart .cart-list input {
+    width: 88px;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #B5B7BC;
+    border-radius: 8px;
+    text-align: center;
+}
+.cart .cart-summary {
+    width: 30%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 8px #0000000D;
+    border: 1px solid #D1D3D6;
+    border-radius: 2px;
+    opacity: 1;
+    padding: 24px;
+    height: 100%;
+}
+.cart .cart-summary .header{
+    margin-bottom: 16px;
+}
+.cart .cart-summary table {
+    width: 100%;
+}
+.cart .cart-summary table td{
+    padding: 8px 0px;
+    width: 50%;
+}
+@media (max-width: 1023px) {
+    .shopping-bag {
+        width: 90%;
+    }
+    .cart {
+        flex-direction: column;
+    }
+    .cart .cart-list { 
+        width: 100%;
+    }
+    .cart .cart-summary {
+        width: 90%;
+    }
+    .cart .cart-list .cart-item-img {
+        text-align: center;
+    }
+    .cart .cart-list img {
+        max-height: 160px;
+        max-width: 180px;
+        width: initial;
+    }
+}

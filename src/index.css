@@ -1,0 +1,434 @@
+@font-face {
+  font-family: "Muli Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli Regular"),
+    url("../src/font/Muli-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli Italic"),
+    url("../src/font/Muli-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli ExtraLight";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli ExtraLight"),
+    url("../src/font/Muli-ExtraLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli ExtraLight Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli ExtraLight Italic"),
+    url("../src/font/Muli-ExtraLightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli Light"), url("../src/font/Muli-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli Light Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli Light Italic"),
+    url("../src/font/Muli-LightItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli SemiBold"),
+    url("../src/font/Muli-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli SemiBold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli SemiBold Italic"),
+    url("../src/font/Muli-SemiBoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli Bold"), url("../src/font/Muli-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli Bold Italic"),
+    url("../src/font/Muli-BoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli ExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli ExtraBold"),
+    url("../src/font/Muli-ExtraBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli ExtraBold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli ExtraBold Italic"),
+    url("../src/font/Muli-ExtraBoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli Black"), url("../src/font/Muli-Black.woff") format("woff");
+}
+@font-face {
+  font-family: "Muli Black Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli Black Italic"),
+    url("../src/font/Muli-BlackItalic.woff") format("woff");
+}
+body {
+  font-family: Muli Regular, sans-serif;
+  margin: 10px;
+}
+
+a.text-link {
+  color: #181c24;
+  text-decoration: underline;
+}
+a.text-link:hover {
+  color: #1f39ff;
+  border-bottom: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+form input {
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 5px;
+  border: 2px solid #91959c;
+  border-radius: 4px;
+}
+
+hr {
+  border: 1px solid #e5e5e7;
+}
+
+button {
+  height: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 0.875rem;
+  text-align: center;
+  border: 0px;
+  border-radius: 10px;
+  min-width: 160px;
+  padding: 0px 24px;
+  cursor: pointer;
+  box-shadow: 0px 3px 6px #39373729;
+}
+button.primary {
+  background-color: #1f39ff;
+}
+button.primary:hover {
+  background-color: #172bc5;
+}
+button.primary:focus {
+  border: 2px solid #6da3ff;
+}
+button.secondary {
+  background-color: #ffffff;
+  border: 2px solid #5963ff;
+  color: #1f39ff;
+}
+button.secondary:hover {
+  border: 2px solid #4f61d4;
+}
+button.secondary:focus {
+  border: 2px solid #6da3ff;
+}
+button.marketing {
+  background-color: initial;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  max-width: 95%;
+  grid-template-columns: repeat(3, 1fr);
+}
+main .container {
+  max-width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 16px;
+}
+
+.grid-col-2 {
+  grid-column: span 2;
+}
+
+.grid-col-3 {
+  grid-column: span 3;
+}
+
+.grid-col-4 {
+  grid-column: span 4;
+}
+
+.grid-col-6 {
+  grid-column: span 6;
+}
+
+.grid-col-12 {
+  grid-column: span 12;
+}
+
+@media (max-width: 1023px) {
+  .grid-s-col-1 {
+    grid-column: span 1;
+  }
+  .grid-s-col-2 {
+    grid-column: span 2;
+  }
+  .grid-s-col-3 {
+    grid-column: span 3;
+  }
+  .grid-s-col-4 {
+    grid-column: span 4;
+  }
+  .grid-s-row-3 {
+    grid-row: span 3;
+  }
+}
+
+.grid-v-center {
+  display: grid;
+  align-content: center;
+}
+
+.text-head-xl {
+  font-family: Muli SemiBold;
+  font-size: 1.5rem;
+}
+
+.text-head-l {
+  font-family: Muli SemiBold;
+  font-size: 1.25rem;
+}
+
+.text-head-m {
+  font-family: Muli SemiBold;
+  font-size: 1rem;
+}
+
+.text-head-s {
+  font-family: Muli Bold;
+  font-size: 0.875rem;
+}
+
+.text-body-l {
+  font-family: Muli Light;
+  font-size: 1.25rem;
+}
+
+.text-body-m {
+  font-family: Muli Light;
+  font-size: 1rem;
+}
+
+.text-body-s {
+  font-family: Muli Light;
+  font-size: 0.875rem;
+}
+
+.display-xl {
+  font-family: Source Serif Pro, serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.display-l {
+  font-family: Source Serif Pro, serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .hide-m {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1439px) {
+  .hide-l {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .show-m {
+    display: inherit !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+  }
+  .grid {
+    grid-gap: 32px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+  }
+  .grid {
+    grid-gap: 32px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+  }
+  .grid {
+    grid-gap: 32px;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+  }
+  .grid {
+    grid-gap: 32px;
+  }
+}
+.font-serif {
+  font-family: Source Serif Pro, serif;
+}
+
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-center {
+  justify-content: center;
+}
+.flex-right {
+  justify-content: right;
+}
+.flex-space {
+  justify-content: space-between;
+}
+@media (max-width: 1023px) {
+  .flex-s-right {
+    justify-content: right;
+  }
+}
+
+.row {
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.pd-b-10 {
+  padding-bottom: 10px;
+}
+
+.pd-t-10 {
+  padding-top: 10px;
+}
+
+.mr-b-10 {
+  margin-bottom: 10px;
+}
+
+.mr-t-10 {
+  margin-top: 10px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+@media (max-width: 1023px) {
+  .align-s-center {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1023px) {
+  .logo {
+    text-align: center;
+  }
+}
+
+.logo img {
+  height: 18px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: inherit;
+}
+nav ul li {
+  float: left;
+  padding: 0px 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #181c24;
+}
+nav ul li a:hover {
+  border-bottom: 5px solid #1f39ff;
+  padding-bottom: 14px;
+}
+nav ul li a:hover + div[class^="submenu-"] {
+  display: block;
+}

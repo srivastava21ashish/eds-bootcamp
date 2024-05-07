@@ -1,0 +1,144 @@
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    font-size: 1rem;
+    border-bottom: 1px solid #e5e5e7;
+    background-color: #ffffff;
+  }
+  header div[class^="submenu-"] {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    margin-top: 18px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  header div[class^="submenu-"] .container {
+    width: 65%;
+    padding: 30px 0px;
+    line-height: 30px;
+  }
+  header div[class^="submenu-"]:hover {
+    display: block;
+  }
+  header div.submenu-signin {
+    max-width: 400px;
+    right: 100px;
+    left: auto;
+  }
+  header button.nav-m-menu,
+  header button.m-menu-close {
+    background-image: url("../../assets/menu.png");
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-size: 40px;
+    min-width: 40px;
+    transition: 0.4s;
+    box-shadow: initial;
+  }
+  header button.nav-m-menu.open,
+  header button.m-menu-close.open {
+    background-image: url("../../assets/menu-close.png");
+    background-size: 30px;
+    min-width: 30px;
+    background-position: center;
+  }
+  header div .m-menu {
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    width: 0%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    opacity: 0;
+    transition: all 0.75s ease;
+  }
+  header div .m-menu.show {
+    width: 100%;
+    opacity: 1;
+  }
+  header div .m-menu .container {
+    height: calc(100vh - 50px);
+    left: 10px;
+    top: 30px;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 95%;
+    z-index: 999;
+  }
+  header div .m-menu .container .m-header {
+    background-color: #fafafa;
+    align-items: center;
+    padding: 20px;
+    border-bottom: #e5e5e7 1px solid;
+  }
+  header div .m-menu button {
+    min-width: initial;
+    width: 40px;
+  }
+  header div .m-menu .row {
+    padding: inherit;
+    height: calc(100% - 120px);
+    overflow-y: auto;
+  }
+  header div .m-menu ul {
+    list-style-type: none;
+    padding: 0 20px;
+  }
+  header div .m-menu ul li {
+    padding: 15px;
+    border-bottom: #e5e5e7 1px solid;
+  }
+  header div .m-menu ul li a {
+    text-decoration: none;
+    color: #181c24;
+  }
+  header div .m-menu .m-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: calc(100% - 40px);
+    padding: 20px;
+    border-top: #e5e5e7 1px solid;
+    background-color: #ffffff;
+  }
+
+.icon-search:before {
+  padding-right: 25px;
+  background: url("../../assets/1-search.jpg") no-repeat;
+  background-size: contain;
+  content: "";
+}
+
+.icon-user:before {
+  padding-right: 25px;
+  background: url("../../assets/1-user.jpg") no-repeat;
+  background-size: contain;
+  content: "";
+}
+
+.icon-shoppingbag:before {
+  padding-right: 25px;
+  background: url("../../assets/1-shopping-bag.jpg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  content: "";
+}
+
+.icon-shoppingbag .cart-counter {
+  background: #181C24;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  align-content: center;
+  top: -10px;
+  position: relative;
+  left: -15px;
+}
